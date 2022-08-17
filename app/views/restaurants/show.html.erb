@@ -1,0 +1,9 @@
+<div class='container'>
+<h1><%= @restaurant.name %></h1>
+<h2>Address: <%=  @restaurant.address%></h2>
+<h3>Category: <%= @restaurant.category %></h3>
+
+<h4> Check other people <%= link_to 'Reviews', restaurant_reviews_path(@restaurant) %></h4>
+
+</div>
+<%= render 'reviews/form' %>

@@ -1,0 +1,7 @@
+<h1>Review ID : <%= @review.id %></h1>
+<h2>Rating: <%=  @review.rating%>/5</h2>
+<h3>What the customer had to say: <%= @restaurant.content %></h3>
+
+<%= link_to 'Reviews', restaurant_reviews_path(@restaurant) %>
+
+<%= render 'reviews/form' %>

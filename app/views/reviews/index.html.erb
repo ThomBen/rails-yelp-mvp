@@ -1,0 +1,16 @@
+<h1>Reviews:</h1>
+
+<div class="container flex center">
+<ol>
+<% @reviews.each do |r| %>
+  <div class="d-flex justify-content-around border">
+    <li>Review number : <%= r.id %></li>
+    <li>Rating : <%= r.rating %>/5</li>
+  </div>
+  <br>
+    <li class='border'><%= r.content %></li>
+    <br>
+    <br>
+<% end %>
+</ol>
+</div>
